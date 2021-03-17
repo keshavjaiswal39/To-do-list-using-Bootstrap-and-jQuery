@@ -11,7 +11,40 @@
 <body>
 
     <div class="container">
-        <h1 class="center">TODO LIST</h1>
+        <h1 align="center">TODO LIST</h1>
+
+        <!-- Input box -->
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="newTask">New Task</label> 
+                    <input type="text" id="newTask" class="form-control" aria-describedby="newTaskHelp" placeholder="Enter the name of your Task"></input>
+                    <small id="newTaskHelp" class="form-text text-muted">A short one line description of your task</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row px-4">
+            <button class="btn btn-success col p-2 m-2">Add</button>
+            <button class="btn btn-danger col p-2 m-2">Clear</button>
+        </div>
+
+        <div class="row px-4">
+            <button class="btn btn-success col p-2 m-2">Sort</button>
+            <button class="btn btn-danger col p-2 m-2">Clear</button>
+        </div>
+
+        <!-- Task list -->
+         <ul class="list-group row m-2">
+            <li class="list-group-item">Text</li>
+            <li class="list-group-item">Text</li>
+            <li class="list-group-item">Text</li>
+            <li class="list-group-item">Text</li>
+            <li class="list-group-item">Text</li>
+         </ul>
+
+
     </div>
 
 
