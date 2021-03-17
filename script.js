@@ -8,6 +8,12 @@ btnAdd.click(() => {
     let listItem=$('<li>',{
         'class': 'list-group-item',text:inpNewTask.val()
     })
+
+    listItem.click(() => {
+
+        $(event.target).toggleClass('done')
+    })
+
     ulTasks.append(listItem)
     inpNewTask.val('')
 })
